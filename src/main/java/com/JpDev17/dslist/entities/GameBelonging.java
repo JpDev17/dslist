@@ -1,5 +1,6 @@
 package com.JpDev17.dslist.entities;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -13,6 +14,7 @@ public class GameBelonging {
     @EmbeddedId
     private GameBelongingPK id = new GameBelongingPK();
 
+    @Column(name = "game_belonging_position")
     private Integer position;
 
     public GameBelonging() {
