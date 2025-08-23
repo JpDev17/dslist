@@ -14,7 +14,7 @@ import java.util.List;
 @RequestMapping(value = "/games")
 public class GameController {
 
-    public GameService gameService;
+    private GameService gameService;
 
     public GameController(GameService gameService) {
         this.gameService = gameService;
