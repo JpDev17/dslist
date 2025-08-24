@@ -8,13 +8,12 @@ import jakarta.persistence.Table;
 import java.util.Objects;
 
 @Entity
-@Table(name = "tb_game_belonging")
+@Table(name = "tb_belonging")
 public class GameBelonging {
 
     @EmbeddedId
     private GameBelongingPK id = new GameBelongingPK();
 
-    @Column(name = "game_belonging_position")
     private Integer position;
 
     public GameBelonging() {

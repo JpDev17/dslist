@@ -10,10 +10,7 @@ public class GameList {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "game_list_id")
     private Long id;
-
-    @Column(name = "game_list_name")
     private String name;
 
     public GameList() {
